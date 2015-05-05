@@ -6,5 +6,9 @@ Router = Ember.Router.extend
 
 
 Router.map ->
+  @route 'about'
+  @route 'collections'
+  @route 'notes'
+  @resource 'exhibits', ->
 
 `export default Router`
