@@ -1,3 +1,6 @@
 <section class="pageClass clearfix">
-  {{single-collection}}
+  <h2>Collections</h2>
+  {{#each}}
+    {{single-collection title=title copy=copy image=image}}
+  {{/each}}
 </section>

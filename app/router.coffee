@@ -10,5 +10,6 @@ Router.map ->
   @route 'collections'
   @route 'notes'
   @resource 'exhibits', ->
+  @route 'artist'
 
 `export default Router`
