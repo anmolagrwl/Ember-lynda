@@ -10,6 +10,7 @@ Router.map ->
   @route 'collections'
   @route 'notes'
   @resource 'exhibits', ->
+    @resource 'exhibit', {path:"/:exhibit_id"}
   @route 'artist'
 
 `export default Router`

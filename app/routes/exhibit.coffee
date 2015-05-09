@@ -1,12 +1,11 @@
 `import Ember from 'ember'`
 
-ExhibitsRoute = Ember.Route.extend(
-  model: () ->
-    return exhibits
+ExhibitRoute = Ember.Route.extend(
+    model: (params) ->
+      return exhibits.findBy("id", params.exhibit_id);
 )
 
-`export default ExhibitsRoute`
-
+`export default ExhibitRoute`
 
 exhibits = [{
   id: "1",
