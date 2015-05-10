@@ -3,6 +3,14 @@
 ExhibitRoute = Ember.Route.extend(
     model: (params) ->
       return exhibits.findBy("id", params.exhibit_id);
+
+      #  Ember.$.getJSON('js/exhibits.json').then (data) ->
+      #       modelId = params.exhibit_id - 1
+      #       data.exhibits.title = data.exhibits[modelId].title
+      #       data.exhibits.artist_name = data.exhibits[modelId].artist_name
+      #       data.exhibits.exhibit_info = data.exhibits[modelId].exhibit_info
+      #       data.exhibits.image = data.exhibits[modelId].image
+      #       data.exhibits
 )
 
 `export default ExhibitRoute`

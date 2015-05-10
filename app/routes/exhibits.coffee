@@ -3,6 +3,9 @@
 ExhibitsRoute = Ember.Route.extend(
   model: () ->
     return exhibits
+
+    # Ember.$.getJSON('js/exhibits.json').then (data) ->
+    #       console.log (data.exhibits)
 )
 
 `export default ExhibitsRoute`
